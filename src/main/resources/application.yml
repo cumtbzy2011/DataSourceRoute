@@ -1,0 +1,16 @@
+server:
+  port: 7777
+
+spring:
+    datasource:
+        url: jdbc:h2:mem:oauth2;DB_CLOSE_DELAY=-1
+        name:
+        username: oauth2
+        password:
+    h2:
+        console:
+            enabled: true
+    jpa:
+        database: H2
+        generate-ddl: true
+        show-sql: true
